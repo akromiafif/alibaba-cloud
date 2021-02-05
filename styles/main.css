@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+
+* {
+  font-family: 'Patua One', cursive;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

@@ -1,13 +1,12 @@
 import React from 'react'
-import Home from '../components/home/Home'
+import Login from '../components/auth/Login'
 
 
-export default function index() {
+export default function login() {
   return (
     <div>
-      <img className="background" src="/img/bg-3.jpg"/>
-      <Home />
-
+      <img className="background" src="/img/bg-login.jpg"/>
+      <Login />
       <style jsx>
         {`
           .background {
@@ -15,7 +14,6 @@ export default function index() {
             height: 100vh;
             position: absolute;
             z-index: -1;
-          }
         `}
       </style>
     </div>

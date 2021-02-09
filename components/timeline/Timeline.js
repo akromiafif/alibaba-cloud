@@ -4,7 +4,6 @@ import Description from './Description'
 
 function Timeline() {
   return (
-    <div>
       <div className="timeline">
         <div className="header">
           <img src="/img/logo-itb.png" />
@@ -17,6 +16,18 @@ function Timeline() {
           <img src="/img/like.svg" />
           <img src="/img/comment.svg" />
           <img src="/img/donate.svg" style={{width: "2rem"}}/>
+          <p>500 likes</p>
+        </div>
+        <div className="campaign-desc">
+          <h3>Tanam modal untuk UMKM Pak Ali</h3>
+          <p>
+            Pak Ali adalah seorang pedagang kecil di daerah Blitar Jawa Timur. 
+            Beliau setiap hari pergi ke pasar untuk menjual aneka hasil bumi.
+            <br />
+            <br />
+            UMKM Pak Ali sangat menjanjikan karena tiap hari usaha beliau selalu habis dan laris.
+            Segera tanam modal untuk UMKM Pak Ali dan dapatkan intrest rate yang tinggi.
+          </p>
         </div>
         <div className="desc">
           <Description title="Target" text="Rp 3.000.000" img="/img/target.svg" />
@@ -27,13 +38,13 @@ function Timeline() {
           <Description title="Terkumpul" text="Rp 2.000.000" img="/img/wallet.svg" />
         </div>
 
-      </div>
-      <style jsx>
+        <style jsx>
         {`
           .timeline {
             display: flex;
             flex-direction: column;
-            margin: auto;
+            margin: 0 auto;
+            margin-bottom: 2rem;
             width: 40%;
             background: rgba(255,255,255, 0.2);
             padding: 1rem;
@@ -80,9 +91,20 @@ function Timeline() {
             justify-content: space-between;
             margin-top: 1rem;
           }
+
+          .campaign-desc {
+            padding: 1rem;
+            width: 100%;
+            box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.2);
+          }
+
+          .campaign-desc h3 {
+            margin-block-end: 0.5rem;
+          }
         `}
       </style>
-    </div>
+
+      </div>
   )
 }
 

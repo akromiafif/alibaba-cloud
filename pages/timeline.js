@@ -7,6 +7,7 @@ export default function timeline() {
     <div>
       <img className="background" src="/img/bg-timeline.jpg"/>
       <Timeline />
+      <Timeline />
       <style jsx>
         {`
           .background {
@@ -14,6 +15,8 @@ export default function timeline() {
             height: 100vh;
             position: absolute;
             z-index: -1;
+            overflow-y: scroll;
+            position: fixed;
         `}
       </style>
     </div>

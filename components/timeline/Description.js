@@ -2,11 +2,15 @@ import React from 'react'
 
 function Description({title, text, img}) {
   return (
-    <div className="desc-item">
-      <img src={img} />
-      <div style={{position: "relative", top: "-0.3rem"}}>
-        <p style={{fontSize: "1.4rem"}}>{title}</p>
-        <p>{text}</p>
+    <div className="container desc-item">
+      <div className="row">
+        <div className="col-4">
+          <img src={img} />
+        </div>
+        <div className="col-8">
+          <p style={{fontSize: "1.4rem"}}>{title}</p>
+          <p>{text}</p>
+        </div>
       </div>
 
       <style jsx>
@@ -21,11 +25,6 @@ function Description({title, text, img}) {
 
           .desc-item img {
             width: 3rem;
-            margin-right: 2rem;
-          }
-
-          .desc-item img, .desc-item div {
-            display: inline-block;
           }
         `}
       </style>

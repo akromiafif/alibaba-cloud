@@ -39,71 +39,68 @@ function Timeline() {
         </div>
 
         <style jsx>
-        {`
-          .timeline {
-            display: flex;
-            flex-direction: column;
-            margin: 0 auto;
-            margin-bottom: 2rem;
-            width: 40%;
-            background: rgba(255,255,255, 0.2);
-            padding: 1rem;
-            position: relative;
-            backdrop-filter: blur(40px);
-            border: solid 2px transparent;
-            background-clip: padding-box;
-            box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
-          }
+          {`
+            .timeline {
+              display: flex;
+              flex-direction: column;
+              margin: 0 auto;
+              margin-top: 4rem;
+              width: 40%;
+              background: rgba(255,255,255, 0.2);
+              padding: 1rem 1rem 2rem 1rem;
+              backdrop-filter: blur(40px);
+              border: solid 2px transparent;
+              background-clip: padding-box;
+              box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
+            }
 
-          .header img {
-            width: 2rem;
-          }
+            .header img {
+              width: 2rem;
+            }
 
-          .header p {
-            margin-left: 0.5rem;
-            position: relative;
-            top: -0.6rem;
-          }
+            .header p {
+              margin-left: 0.5rem;
+              position: relative;
+            }
 
-          .header img, .header p {
-            display: inline-block;
-          }
+            .header img, .header p {
+              display: inline-block;
+            }
 
-          .body img {
-            width: 100%;
-            margin-top: 1rem;
-          }
+            .body img {
+              width: 100%;
+              margin-top: 1rem;
+            }
 
-          .main-btn img {
-            display: inline-block;
-            width: 1.5rem;
-            margin-right: 0.5rem;
-            cursor: pointer;
-          }
+            .main-btn img {
+              display: inline-block;
+              width: 1.5rem;
+              margin-right: 0.5rem;
+              cursor: pointer;
+            }
 
-          .main-btn img:hover {
-            opacity: 0.5;
-          }
+            .main-btn img:hover {
+              opacity: 0.5;
+            }
 
-          .desc {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 1rem;
-          }
+            .desc {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              margin-top: 1rem;
+            }
 
-          .campaign-desc {
-            padding: 1rem;
-            width: 100%;
-            box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.2);
-          }
+            .campaign-desc {
+              padding: 1rem;
+              width: 100%;
+              box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.2);
+            }
 
-          .campaign-desc h3 {
-            margin-block-end: 0.5rem;
-          }
-        `}
-      </style>
-
+            .campaign-desc h3 {
+              margin-block-end: 0.5rem;
+            }
+          `}
+        </style>
       </div>
   )
 }
